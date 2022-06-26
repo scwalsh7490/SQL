@@ -1,0 +1,26 @@
+---Create a store database:
+
+
+CREATE table kitchen_supplies (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, aisle INTEGER);
+
+INSERT into kitchen_supplies VALUES (1, "blender", 3, 30, 1);
+INSERT into kitchen_supplies VALUES (2, "Spoons", 42, 3, 2);
+INSERT into kitchen_supplies VALUES (3, "bowls", 18, 5, 2);
+INSERT into kitchen_supplies VALUES (4, "Instant Pot", 4, 130, 3);
+INSERT into kitchen_supplies VALUES (5, "Rice Cooker", 6, 32, 3);
+INSERT into kitchen_supplies VALUES (6, "knives", 33, 3, 2);
+INSERT into kitchen_supplies VALUES (7, "forks", 55, 1, 2);
+INSERT into kitchen_supplies VALUES (8, "plates", 23, 6, 2);
+INSERT into kitchen_supplies VALUES (9, "glasses", 18, 8, 1);
+INSERT into kitchen_supplies VALUES (10, "strainer", 12, 12, 1);
+INSERT into kitchen_supplies VALUES (11, "pot", 7, 35, 3);
+INSERT into kitchen_supplies VALUES (12, "pan", 10, 52, 3);
+INSERT into kitchen_supplies VALUES (13, "microwave", 9, 82, 3); 
+INSERT into kitchen_supplies VALUES (14, "spatula", 14, 7, 1);
+INSERT into kitchen_supplies VALUES (15, "toaster", 15, 29, 3);
+
+--Display database in order by Price--
+SELECT * FROM kitchen_supplies ORDER by price; 
+
+--Display items from database that have a quatity of more than 15:
+SELECT * FROM kitchen_supplies Where quantity > 15
